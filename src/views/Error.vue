@@ -4,7 +4,7 @@
       <p>
         404
         <br>
-        <small>PAGE NOT FOUND</small>
+        <small>PÁGINA NÃO ENCONTRADA</small>
       </p>
       <span class="circle big"></span>
       <span class="circle med"></span>
@@ -12,7 +12,7 @@
       <br>
       <br>
       <v-btn large to="/" class="green--text">
-        <v-icon>arrow_back</v-icon>GO HOME
+        <v-icon>arrow_back</v-icon>VOLTAR PARA HOME
       </v-btn>
     </div>
   </v-layout>

@@ -18,7 +18,7 @@
 <script>
 import PostPreview from '../components/PostPreview'
 import StoryblokClient from 'storyblok-js-client'
-const token = 'iyPj3vEKmPladyz3zeqKuwtt'
+const token = 'XnwBPtdnoXKNShIQQDQ43gtt'
 let storyapi = new StoryblokClient({
   accessToken: token
 })
@@ -26,25 +26,25 @@ let storyapi = new StoryblokClient({
 export default {
   metaInfo: {
     title: 'Blog',
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Dev Well Lima",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
-        content: "Eldin Zaimovic's Blog"
+        content: "Dev Well Lima Blog"
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Dev Well Lima" },
+      { property: 'og:site_name', content: "Dev Well Lima" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://well.controlemix.com.br' },
       {
         property: 'og:image',
-        content: 'https://i.imgur.com/Dcz2PGx.jpg'
+        content: 'assets/images/avatar.jpg'
       },
       {
         property: 'og:description',
-        content: "Eldin Zaimovic's Blog"
+        content: "Dev Well Lima Blog"
       }
     ]
   },

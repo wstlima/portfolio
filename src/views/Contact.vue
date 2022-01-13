@@ -91,27 +91,27 @@ import {
 export default {
   metaInfo: {
     title: 'Contact',
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Dev Well Lima",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
         content:
-          "Eldin Zaimovic's Contact Doboj Bosnia and Herzegovina Freelance Get in Touch ContactMe"
+          "Dev Well Lima Contact Doboj Bosnia and Herzegovina Freelance Get in Touch ContactMe"
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Dev Well Lima" },
+      { property: 'og:site_name', content: "Dev Well Lima" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://well.controlemix.com.br' },
       {
         property: 'og:image',
-        content: 'https://i.imgur.com/Dcz2PGx.jpg'
+        content: 'assets/images/avatar.jpg'
       },
       {
         property: 'og:description',
         content:
-          "Eldin Zaimovic's Contact Doboj Bosnia and Herzegovina Freelance Get in Touch ContactMe"
+          "Dev Well Lima Contact Doboj Bosnia and Herzegovina Freelance Get in Touch ContactMe"
       }
     ]
   },

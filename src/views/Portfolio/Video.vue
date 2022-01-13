@@ -44,27 +44,27 @@ import { PlyrVideo } from 'vue-plyr'
 export default {
   metaInfo: {
     title: 'Video Portfolio',
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Dev Well Lima",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
         content:
-          "Eldin Zaimovic's Services Adobe Premire After Effects Video Ad's Social Media Logo Animation Instagram Facebook Video Editing Advetising"
+          "Dev Well Lima Services Adobe Premire After Effects Video Ad's Social Media Logo Animation Instagram Facebook Video Editing Advetising"
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Dev Well Lima" },
+      { property: 'og:site_name', content: "Dev Well Lima" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://well.controlemix.com.br' },
       {
         property: 'og:image',
-        content: 'https://i.imgur.com/Dcz2PGx.jpg'
+        content: 'assets/images/avatar.jpg'
       },
       {
         property: 'og:description',
         content:
-          "Eldin Zaimovic's Services Adobe Premire After Effects Video Ad's Social Media Logo Animation Instagram Facebook Video Editing Advetising"
+          "Dev Well Lima Services Adobe Premire After Effects Video Ad's Social Media Logo Animation Instagram Facebook Video Editing Advetising"
       }
     ]
   },
@@ -75,100 +75,76 @@ export default {
       videos: [
         {
           dialog: false,
-          title: 'Vila Design Promo video',
-          href: 'https://www.youtube.com/embed/XP8j7NA_wzc',
+          title: 'Aula #1 - PagSeguro Checkout Transparente Ionic',
+          href: 'https://www.youtube.com/embed/1xWgE0pqypg',
           type: 'text/html',
-          youtube: 'XP8j7NA_wzc',
-          poster: 'https://img.youtube.com/vi/XP8j7NA_wzc/maxresdefault.jpg'
+          youtube: '1xWgE0pqypg',
+          poster: 'https://img.youtube.com/vi/1xWgE0pqypg/maxresdefault.jpg'
         },
         {
           dialog: false,
-          title: 'Pushartist Promo video',
-          href: 'https://www.youtube.com/embed/PZnn1fDUb6U',
+          title: 'Aula #2 - PagSeguro Checkout Transparente Ionic',
+          href: 'https://www.youtube.com/embed/wGODP_lY2R0',
           type: 'text/html',
-          youtube: 'PZnn1fDUb6U',
-          poster: 'https://img.youtube.com/vi/PZnn1fDUb6U/maxresdefault.jpg'
+          youtube: 'wGODP_lY2R0',
+          poster: 'https://img.youtube.com/vi/wGODP_lY2R0/maxresdefault.jpg'
         },
         {
           dialog: false,
-          title: 'Unbroken Designs Instagram Promo video',
-          href: 'https://www.youtube.com/embed/KfxHI3vwALk',
+          title: 'Aula #3 - PagSeguro Checkout Transparente Ionic',
+          href: 'https://www.youtube.com/embed/m-VDZjIZ7eY',
           type: 'text/html',
-          youtube: 'KfxHI3vwALk',
-          poster: 'https://img.youtube.com/vi/KfxHI3vwALk/maxresdefault.jpg'
+          youtube: 'm-VDZjIZ7eY',
+          poster: 'https://img.youtube.com/vi/m-VDZjIZ7eY/maxresdefault.jpg'
         },
         {
           dialog: false,
-          title: 'EEVOY APP Promo',
-          href: 'https://www.youtube.com/embed/JEhpsP75STk',
+          title: 'Aula #4 - PagSeguro Checkout Transparente Ionic',
+          href: 'https://www.youtube.com/embed/jnJvZM3-B9k',
           type: 'text/html',
-          youtube: 'JEhpsP75STk',
-          poster: 'https://i.imgur.com/7CLqR2o.png'
+          youtube: 'jnJvZM3-B9k',
+          poster: 'https://img.youtube.com/vi/jnJvZM3-B9k/maxresdefault.jpg'
         },
         {
           dialog: false,
-          title: "Patty Boland's Party video",
-          href: 'https://www.youtube.com/embed/5zB4FIkhFHk',
+          title: 'Aula #5 - PagSeguro Checkout Transparente Ionic',
+          href: 'https://www.youtube.com/embed/DGFt_miMX1c',
           type: 'text/html',
-          youtube: '5zB4FIkhFHk',
-          poster: 'https://img.youtube.com/vi/5zB4FIkhFHk/maxresdefault.jpg'
+          youtube: 'DGFt_miMX1c',
+          poster: 'https://img.youtube.com/vi/DGFt_miMX1c/maxresdefault.jpg'
         },
         {
           dialog: false,
-          title: 'Montenegro Summer 2017',
-          href: 'https://www.youtube.com/embed/kZahccWTpGc',
+          title: 'Instale o Vesta CP + CSF Firewall',
+          href: 'https://www.youtube.com/embed/YcKIz7vrvbI',
           type: 'text/html',
-          youtube: 'kZahccWTpGc',
-          poster: 'https://i.imgur.com/4yTFAlM.jpg'
+          youtube: 'YcKIz7vrvbI',
+          poster: 'https://img.youtube.com/vi/YcKIz7vrvbI/maxresdefault.jpg'
         },
         {
           dialog: false,
-          title: 'VilaShirts Promo video',
-          href: 'https://www.youtube.com/embed/SZVMKtEORRw',
+          title: 'Restauração do Backup do Sistema',
+          href: 'https://www.youtube.com/embed/L_J1q0O-N9c',
           type: 'text/html',
-          youtube: 'SZVMKtEORRw',
-          poster: 'https://i.imgur.com/POCbX1B.jpg'
+          youtube: 'L_J1q0O-N9c',
+          poster: 'https://img.youtube.com/vi/L_J1q0O-N9c/maxresdefault.jpg'
         },
         {
           dialog: false,
-          title: 'Albania Durres Summer 2018',
-          href: 'https://www.youtube.com/embed/jd9pDFaRDKI',
+          title: 'Plugin Especial Yoast SEO',
+          href: 'https://www.youtube.com/embed/jzKPKZkPm-s',
           type: 'text/html',
-          youtube: 'jd9pDFaRDKI',
-          poster: 'https://img.youtube.com/vi/jd9pDFaRDKI/maxresdefault.jpg'
+          youtube: 'jzKPKZkPm-s',
+          poster: 'https://img.youtube.com/vi/jzKPKZkPm-s/maxresdefault.jpg'
         },
         {
           dialog: false,
-          title: 'Matricar Instagram Promo video',
-          href: 'https://www.youtube.com/embed/S-2hNuuwmpY',
+          title: 'Plugin Especial Visual Composer',
+          href: 'https://www.youtube.com/embed/kiHuWUeWE-c',
           type: 'text/html',
-          youtube: 'S-2hNuuwmpY',
-          poster: 'https://img.youtube.com/vi/S-2hNuuwmpY/maxresdefault.jpg'
-        },
-        {
-          dialog: false,
-          title: 'Vila Design Glitch Logo Animation',
-          href: 'https://www.youtube.com/embed/SrX8T2G6bew',
-          type: 'text/html',
-          youtube: 'SrX8T2G6bew',
-          poster: 'https://img.youtube.com/vi/SrX8T2G6bew/maxresdefault.jpg'
-        },
-        {
-          dialog: false,
-          title: 'Splash logo animation',
-          href: 'https://www.youtube.com/embed/vBAZpwtq08I',
-          type: 'text/html',
-          youtube: 'vBAZpwtq08I',
-          poster: 'https://i.imgur.com/3jK0rTs.png'
-        },
-        {
-          dialog: false,
-          title: 'Julie Lindh CBD Infusion Facial',
-          href: 'https://www.youtube.com/embed/9qFQMV9IJ9I',
-          type: 'text/html',
-          youtube: '9qFQMV9IJ9I',
-          poster: 'https://img.youtube.com/vi/9qFQMV9IJ9I/maxresdefault.jpg'
-        }
+          youtube: 'kiHuWUeWE-c',
+          poster: 'https://img.youtube.com/vi/kiHuWUeWE-c/maxresdefault.jpg'
+        }        
       ]
     }
   }

@@ -2,7 +2,7 @@
   <v-container grid-list-xl>
     <h2 class="pl-4">
       <span>Web</span>
-      <span class="green--text">Portfolio</span>
+      <span class="green--text">Apps</span>
     </h2>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-dialog
@@ -29,8 +29,11 @@
           <v-img :src="project.poster"></v-img>
           <v-card-text>
             <h3 class="headline mb-0">
-              <span>Technology</span>
+              <span>{{project.title}}</span>
             </h3>
+            <h4 class="green--text mb-4">
+              <span>{{project.desc}}</span>
+            </h4>            
             <v-chip color="green" text-color="white">{{project.tech.tech1}}</v-chip>
             <v-chip color="green" text-color="white">{{project.tech.tech2}}</v-chip>
             <v-chip color="green" text-color="white">{{project.tech.tech3}}</v-chip>
@@ -54,27 +57,27 @@
 export default {
   metaInfo: {
     title: 'Web Portfolio',
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Dev Well Lima",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
         content:
-          "Eldin Zaimovic's Web Portfolio Vue Vue.js Nuxt Nuxt.js HTML CSS Vuetify Axios GraphQL JavaScript Web Developer Front-End Frontend Designer App Responsive"
+          "Dev Well Lima Web Portfolio Vue Vue.js Nuxt Nuxt.js HTML CSS Vuetify Axios GraphQL JavaScript Web Developer Front-End Frontend Designer App Responsive"
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Dev Well Lima" },
+      { property: 'og:site_name', content: "Dev Well Lima" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://well.controlemix.com.br' },
       {
         property: 'og:image',
-        content: 'https://i.imgur.com/Dcz2PGx.jpg'
+        content: 'assets/images/avatar.jpg'
       },
       {
         property: 'og:description',
         content:
-          "Eldin Zaimovic's Web Portfolio Vue Vue.js Nuxt Nuxt.js HTML CSS Vuetify Axios GraphQL JavaScript Web Developer Front-End Frontend Designer App Responsive"
+          "Dev Well Lima Web Portfolio Vue Vue.js Nuxt Nuxt.js HTML CSS Vuetify Axios GraphQL JavaScript Web Developer Front-End Frontend Designer App Responsive"
       }
     ]
   },
@@ -84,120 +87,45 @@ export default {
       projects: [
         {
           dialog: false,
-          title: 'Euphoric Voyage',
-          git: 'https://github.com/EldinZaimovic/euphoric-voyage',
-          demo: 'https://www.euphoric-voyage.com/',
+          title: 'Controle de Gastos',
+          desc: 'Aplicação web usando PouchDB para rodar off line',
+          git: '#',
+          demo: 'https://controlemix.com.br',
           tech: {
-            tech1: 'Gatsby',
+            tech1: 'Vue',
             tech2: 'JavaScript',
             tech3: 'SCSS',
             tech4: 'Markdown'
           },
-          poster: 'https://i.imgur.com/9Ww2bvm.png'
+          poster: 'https://well.controlemix.com.br/assets/images/controlemix1.jpg'
         },
         {
           dialog: false,
-          title: 'This Site',
-          git: 'https://github.com/EldinZaimovic/Eldin-Space-Vue',
-          demo: 'https://eldin.space/',
+          title: 'Este Site',
+          desc: 'Site integrado com Firebase, Storyblock, Google Analytics',
+          git: '#',
+          demo: 'https://well.controlemix.com.br/',
           tech: {
             tech1: 'VUE',
             tech2: 'Storyblok',
             tech3: 'HTML',
             tech4: 'JavaScript'
           },
-          poster: 'https://i.imgur.com/sGUofpv.png'
+          poster: 'https://well.controlemix.com.br/assets/images/site1.jpg'
         },
         {
           dialog: false,
-          title: 'Frontend Developer at Brandly.com',
-          git: 'https://cdn.neow.in/news/images/uploaded/2018/11/1543476286_cybersecurity.jpg',
-          demo: 'https://www.brandly.com/',
+          title: 'Clube de Assinantes Intrínsecos',
+          desc: 'Aplicativo SPA para controle de assinaturas',
+          git: '#',
+          demo: 'https://www.intrinsecos.com.br',
           tech: {
-            tech1: 'VUE',
+            tech1: 'Angular',
             tech2: 'SCSS',
             tech3: 'HTML',
             tech4: 'JavaScript'
           },
-          poster: 'https://i.imgur.com/nVqtTAf.png'
-        },
-        {
-          dialog: false,
-          title: 'Digital Madness Test',
-          git: 'https://github.com/EldinZaimovic/Digital-Madness-test',
-          demo: 'https://digital-madness-test.netlify.com/',
-          tech: {
-            tech1: 'VUE',
-            tech2: 'CSS',
-            tech3: 'HTML',
-            tech4: 'JavaScript'
-          },
-          poster: 'https://i.imgur.com/GOIIL06.png'
-        },
-        {
-          dialog: false,
-          title: 'Snowball Coding Challenge',
-          git: 'https://github.com/EldinZaimovic/SnowBall-Project',
-          demo: 'https://snowball-test.netlify.com/',
-          tech: {
-            tech1: 'VUE',
-            tech2: 'GraphQL',
-            tech3: 'Axios',
-            tech4: 'JavaScript'
-          },
-          poster: 'https://i.imgur.com/rXHBs36.png'
-        },
-        {
-          dialog: false,
-          title: 'IBM Coding Challenge - Films Location',
-          git: 'https://github.com/EldinZaimovic/Film-Location-List',
-          demo: 'https://film-location-ibm-cc.netlify.com/',
-          tech: {
-            tech1: 'VUE',
-            tech2: 'Lodash',
-            tech3: 'HTML',
-            tech4: 'JavaScript'
-          },
-          poster: 'https://i.imgur.com/kCN1CFH.png'
-        },
-        {
-          dialog: false,
-          title: 'Stock Trader',
-          git: 'https://github.com/EldinZaimovic/Stock-Trader',
-          demo: 'https://stock-trader-eldin.netlify.com/',
-          tech: {
-            tech1: 'VUE',
-            tech2: 'Vuex',
-            tech3: 'Firebase',
-            tech4: 'JavaScript'
-          },
-          poster: 'https://i.imgur.com/wK5dqP7.png'
-        },
-        {
-          dialog: false,
-          title: 'Riders Share Newsleter',
-          git: '',
-          demo: 'https://imgur.com/zTMJhGk',
-          tech: {
-            tech1: 'HTML',
-            tech2: 'CSS',
-            tech3: 'MailChimp',
-            tech4: 'JavaScript'
-          },
-          poster: 'https://i.imgur.com/zTMJhGk.jpg'
-        },
-        {
-          dialog: false,
-          title: 'My Old Web Portfolio',
-          git: 'https://github.com/EldinZaimovic/EldinZaimovic.github.io',
-          demo: 'https://eldinzaimovic.github.io/index.html',
-          tech: {
-            tech1: 'HTML',
-            tech2: 'CSS',
-            tech3: 'JavaScript',
-            tech4: 'jQuery'
-          },
-          poster: 'https://i.imgur.com/AW7CXD5.jpg'
+          poster: 'https://well.controlemix.com.br/assets/images/intri1.jpg'
         }
       ]
     }

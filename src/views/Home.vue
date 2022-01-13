@@ -23,7 +23,21 @@
 
     <br>
 
-    <vue-typer class="headline" :repeat="0" text="Eldin Zaimovic"></vue-typer>
+
+    <v-flex xs12 sm6 md4 lg4 xl4>
+      <v-card flat color="transparent" max-width="500">
+        <v-card-title primary-title>
+          <div>
+            <h3 class="headline mb-0 center" style="text-align: center;">
+              <span>Dev Wellington </span>
+              <span class="green--text">Lima</span>
+            </h3>
+            </div>
+        </v-card-title>
+      </v-card>
+    </v-flex>
+
+    <!-- <vue-typer class="headline" :repeat="0" text="Dev Well Lima"></vue-typer> -->
     <vue-typer
       :text="text1"
       :repeat="Infinity"
@@ -42,25 +56,21 @@
       <v-card flat color="transparent" max-width="500">
         <v-card-title primary-title>
           <div>
-            <h3 class="headline mb-0">
-              <span>About</span>
-              <span class="green--text">Me</span>
+            <h3 class="headline mb-0 center" style="text-align: center;">
+              <span style="font-size:18px">SOBRE </span>
+              <span class="green--text"  style="font-size:18px">MIM</span>
             </h3>
             <div>
-              <p>
-                Hello! I’m Eldin Zaimovic. I'm a front-end developer who
-                is passionate about
-                <span
-                  class="green--text font-weight-bold"
-                >VUE</span>, building great user experiences,
-                fighting for simplicity over complexity and constantly learning.
-                When I'm not coding or making videos, you'll find me traveling across Europe.
+              <p style="text-align: center;">
+                Olá! Sou programador especialista full-stack em constante evolução e apaixonado por <span class="green--text font-weight-bold">TECNOLOGIA!</span>
+                Vivo criando aplicações web e mobile, onde foco na simplicidade e segurança em vez da complexidade.
+                E quando não estou programando ou criando vídeos gosto de jogar PS5 e ir a praia com minha filha.
               </p>
             </div>
           </div>
         </v-card-title>
 
-        <v-card-actions class="hidden-sm-and-down">
+        <v-card-actions class="hidden-sm-and-down justify-center">
           <v-btn
             v-for="icon in icons"
             :key="icon.icon"
@@ -98,24 +108,25 @@
 <script>
 import { VueTyper } from 'vue-typer'
 import VueCompareImage from 'vue-compare-image'
+import icons from '../data/socialIcons'
 
 export default {
   metaInfo: {
     title: 'Home',
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Dev Well Lima",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: "Eldin Zaimovic's Portfolio" },
+      { name: 'description', content: "Well Portfolio" },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Dev Well Lima" },
+      { property: 'og:site_name', content: "Dev Well Lima" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://well.controlemix.com.br' },
       {
         property: 'og:image',
-        content: 'https://i.imgur.com/Dcz2PGx.jpg'
+        content: 'assets/images/avatar.jpg'
       },
-      { property: 'og:description', content: "Eldin Zaimovic's Portfolio" }
+      { property: 'og:description', content: "Well's Portfolio" }
     ]
   },
   components: {
@@ -124,32 +135,12 @@ export default {
   },
   data () {
     return {
-      icons: [
-        { href: 'https://github.com/EldinZaimovic', icon: 'fab fa-github' },
-        {
-          href: 'https://stackoverflow.com/users/story/9660700',
-          icon: 'fab fa-stack-overflow'
-        },
-        { href: 'https://twitter.com/EldinMatricar', icon: 'fab fa-twitter' },
-        {
-          href: 'https://www.linkedin.com/in/eldin-zaimovic',
-          icon: 'fab fa-linkedin-in'
-        },
-        {
-          href: 'https://www.xing.com/profile/Eldin_Zaimovic?sc_o=mxb_p',
-          icon: 'fab fa-xing'
-        },
-        {
-          href: 'https://www.facebook.com/EldinVasVoli',
-          icon: 'fab fa-facebook-f'
-        },
-        { href: 'https://www.instagram.com/matricar', icon: 'fab fa-instagram' }
-      ],
-      text1: ['Front-End Developer', 'Web Developer', 'Web Designer'],
-      leftImage: 'https://i.imgur.com/bU50uS9.jpg',
-      rightImage: 'https://i.imgur.com/z3ZoEEw.jpg',
-      leftImage2: 'https://i.imgur.com/SXBitjh.jpg',
-      rightImage2: 'https://i.imgur.com/Dcz2PGx.jpg',
+      icons: icons,
+      text1: ['Front-End', 'Back-End', 'Devops', 'UI Designer'],
+      leftImage: 'assets/images/leftImage.jpg',
+      rightImage: 'assets/images/rightImage.jpg',
+      leftImage2: 'assets/images/leftImage2.jpg',
+      rightImage2: 'assets/images/rightImage2.jpg',
       sliderLine: 0,
       hSize: 0,
       sliderPosition: 0.5

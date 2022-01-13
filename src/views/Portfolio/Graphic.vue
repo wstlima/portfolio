@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-xl>
     <h2 class="pl-4">
-      <span>Graphic</span>
+      <span>UI</span>
       <span class="green--text">Portfolio</span>
     </h2>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
@@ -37,27 +37,27 @@
 export default {
   metaInfo: {
     title: 'Graphic Portfolio ',
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Dev Well Lima",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
         content:
-          "Eldin Zaimovic's Graphic Adobe PhotoShop Logo Design Instagram Poster"
+          "Dev Well Lima Graphic Adobe PhotoShop Logo Design Instagram Poster"
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Dev Well Lima" },
+      { property: 'og:site_name', content: "Dev Well Lima" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://well.controlemix.com.br' },
       {
         property: 'og:image',
-        content: 'https://i.imgur.com/Dcz2PGx.jpg'
+        content: 'assets/images/avatar.jpg'
       },
       {
         property: 'og:description',
         content:
-          "Eldin Zaimovic's Graphic Adobe PhotoShop Logo Design Instagram Poster"
+          "Dev Well Lima Graphic Adobe PhotoShop Logo Design Instagram Poster"
       }
     ]
   },
@@ -67,48 +67,18 @@ export default {
       images: [
         {
           dialog: false,
-          title: 'VilaShirts Logo',
-          poster: 'https://i.imgur.com/QEnmqcE.png'
+          title: 'UI Kit App para Chatbot',
+          poster: 'https://well.controlemix.com.br/assets/images/ui1.jpg'
         },
         {
           dialog: false,
-          title: 'BlackBird Property Group Logo',
-          poster: 'https://i.imgur.com/b37FfUU.jpg'
+          title: 'UI Kit para App de Licitações',
+          poster: 'https://well.controlemix.com.br/assets/images/ui2.png'
         },
         {
           dialog: false,
-          title: 'TeeLock Consulting Logo',
-          poster: 'https://i.imgur.com/XSo4bmw.jpg'
-        },
-        {
-          dialog: false,
-          title: 'SEA||WA||MMXI',
-          poster: 'https://i.imgur.com/thxUnTH.jpg'
-        },
-        {
-          dialog: false,
-          title: 'Alpine365 Logo',
-          poster: 'https://i.imgur.com/LOzW21e.jpg'
-        },
-        {
-          dialog: false,
-          title: 'Josefine Product Pack',
-          poster: 'https://i.imgur.com/TrthgRN.jpg'
-        },
-        {
-          dialog: false,
-          title: 'Next Party Flayer',
-          poster: 'https://i.imgur.com/tYjfL2d.jpg'
-        },
-        {
-          dialog: false,
-          title: 'VilaShirts T-Shirts',
-          poster: 'https://i.imgur.com/ULuRuFB.jpg'
-        },
-        {
-          dialog: false,
-          title: 'BAB Coin',
-          poster: 'https://i.imgur.com/YU52AVB.jpg'
+          title: 'UI Kit para App para Gastos',
+          poster: 'https://well.controlemix.com.br/assets/images/ui3.jpg'
         }
       ]
     }

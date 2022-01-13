@@ -1,7 +1,7 @@
 <template>
   <v-layout column justify-center class="mt-4 pt-2" v-editable="result.blok">
-    <h1 class="text-xs-center mb-4 pb-2">{{result.title}}</h1>
-    <span>{{result.date.getDate()}}.{{result.date.getMonth()+1}}.{{result.date.getFullYear()}}</span>
+    <h1 class="text-xs-center pb-1">{{result.title}}</h1>
+    <span class="mb-4" style="text-align: center;">{{result.date.getDate()}}.{{result.date.getMonth()+1}}.{{result.date.getFullYear()}}</span>
     <v-img :src="result.image" aspect-ratio="2.75" height="330" contain :alt="result.title"></v-img>
     <v-layout column justify-center align-center class="mt-4 pt-2">
       <p v-html="body"></p>
@@ -9,7 +9,7 @@
     <br>
     <br>
     <v-btn large flat to="/blog" class="green--text">
-      <v-icon>arrow_back</v-icon>Back to Blog
+      <v-icon>arrow_back</v-icon>Voltar ao Blog
     </v-btn>
   </v-layout>
 </template>
@@ -17,7 +17,8 @@
 <script>
 import marked from 'marked'
 import StoryblokClient from 'storyblok-js-client'
-const token = 'iyPj3vEKmPladyz3zeqKuwtt'
+// const token = 'dbkdP7YPwIowdqQMhwOEngtt'
+const token = 'XnwBPtdnoXKNShIQQDQ43gtt'
 let storyapi = new StoryblokClient({
   accessToken: token
 })
@@ -39,14 +40,14 @@ export default {
           name: 'description',
           content: this.result.content
         },
-        { charset: 'utf-8' },
-        { property: 'og:title', content: "Eldin' Space" },
-        { property: 'og:site_name', content: "Eldin' Space" },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://eldin.space' },
+      { charset: 'utf-8' },
+      { property: 'og:title', content: "Dev Well Lima" },
+      { property: 'og:site_name', content: "Dev Well Lima" },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://well.controlemix.com.br' },
         {
           property: 'og:image',
-          content: 'https://i.imgur.com/Dcz2PGx.jpg'
+          content: 'assets/images/avatar.jpg'
         },
         {
           property: 'og:description',
@@ -57,7 +58,7 @@ export default {
   },
   computed: {
     body () {
-      return marked(this.result.content)
+      return this.result.blok.content
     }
   },
 
@@ -86,6 +87,7 @@ export default {
         })
         .then(res => {
           this.posts = res.data.stories.map(bp => {
+            console.log(bp);
             return {
               id: bp.slug,
               title: bp.content.title,
@@ -93,6 +95,7 @@ export default {
               image: bp.content.thumbnail,
               content: bp.content.content,
               date: new Date(bp.content.date)
+              // date: new Date(bp.content.date)
             }
           })
           this.result = this.posts.find(
@@ -108,4 +111,11 @@ export default {
 </script>
 
 <style scoped>
+.language-javascript {
+    width: -webkit-fill-available !important;
+}
+
+.code {
+    background-color: #272822;
+}
 </style>

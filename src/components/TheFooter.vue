@@ -1,9 +1,9 @@
 <template>
   <v-footer class="pa-3">
-    <v-icon small color="red">fas fa-heart</v-icon>
-    <v-icon small color="green">fab fa-vuejs</v-icon>
+    Feito com&nbsp;
+    <v-icon small color="green">fab fa-vuejs</v-icon>ue.js
     <v-spacer></v-spacer>
-    <div>&copy; {{ new Date().getFullYear() }}</div>
+    <div>&copy; Well Lima {{ new Date().getFullYear() }}</div>
   </v-footer>
 </template>
 

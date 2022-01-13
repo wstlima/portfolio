@@ -12,7 +12,7 @@
           <v-card-title></v-card-title>
           <v-img :src="portfolio.src" aspect-ratio="2.75" height="130" contain></v-img>
           <v-card-title primary-title class="justify-center">
-            <v-flex text-xs-center subheading font-weight-bold>{{portfolio.title}}</v-flex>
+            <v-flex text-xs-center subheading font-weight-bold>{{portfolio.desc}}</v-flex>
           </v-card-title>
         </v-card>
       </v-flex>
@@ -24,27 +24,27 @@
 export default {
   metaInfo: {
     title: 'Portfolio',
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Dev Well Lima",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'description',
         content:
-          "Eldin Zaimovic's Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
+          "Dev Well Lima Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
       },
       { charset: 'utf-8' },
-      { property: 'og:title', content: "Eldin' Space" },
-      { property: 'og:site_name', content: "Eldin' Space" },
+      { property: 'og:title', content: "Dev Well Lima" },
+      { property: 'og:site_name', content: "Dev Well Lima" },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://eldin.space' },
+      { property: 'og:url', content: 'https://well.controlemix.com.br' },
       {
         property: 'og:image',
-        content: 'https://i.imgur.com/Dcz2PGx.jpg'
+        content: 'assets/images/avatar.jpg'
       },
       {
         property: 'og:description',
         content:
-          "Eldin Zaimovic's Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
+          "Dev Well Lima Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
       }
     ]
   },
@@ -53,16 +53,19 @@ export default {
       portfolios: [
         {
           src: 'https://i.imgur.com/GvTt5GG.png',
-          title: 'Web'
+          title: 'Web',
+          desc: 'Aplicações'
         },
 
         {
           src: 'https://i.imgur.com/wXLtLKy.png',
-          title: 'Video'
+          title: 'Video',
+          desc: 'Vídeos'
         },
         {
           src: 'https://i.imgur.com/g74mGuU.png',
-          title: 'Graphic'
+          title: 'Graphic',
+          desc: 'Designers'
         }
       ]
     }
