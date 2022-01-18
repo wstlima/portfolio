@@ -113,7 +113,7 @@
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold green--text">JUN 2021</div>
+                <div class="caption font-weight-bold green--text">FEV 2021</div>
                 <div class="caption font-weight-bold green--text">ATUAL</div>
               </v-flex>
               <v-flex class="pl-2">
@@ -136,7 +136,7 @@
           <v-timeline-item color="green" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold green--text">OUT 2019</div>
+                <div class="caption font-weight-bold green--text">ABR 2020</div>
               </v-flex>
               <v-flex class="pl-2">
                 <strong>Desenvolvedor Especialista</strong>
@@ -267,9 +267,9 @@
     </v-layout>
     <v-flex xs12 sm12 md4 lg12 xl12 class="mx-2 pt-4">
       <div  style="text-align: center">
-        <div class="caption">confira todas as skills e experiências</div>
+        <div class="caption">confira mais skills</div>
         <v-btn
-          href="assets/pdf/curriculo-desenvolvedor-full-stack-wellington-lima.pdf"
+          href="assets/pdf/curriculo-well-lima-dev-full-stack.pdf"
           target="_blank"
           color="green"
           dark

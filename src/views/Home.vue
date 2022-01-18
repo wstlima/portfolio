@@ -124,7 +124,7 @@ export default {
       { property: 'og:url', content: 'https://well.controlemix.com.br' },
       {
         property: 'og:image',
-        content: 'assets/images/avatar.jpg'
+        content: '/assets/images/avatar.jpg'
       },
       { property: 'og:description', content: "Well's Portfolio" }
     ]
